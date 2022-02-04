@@ -2,7 +2,7 @@
 
     $message = null;
 
-    require("includes/db_connect.php");
+    require_once("includes/db_connect.php");
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	try {
     $pdo->query("use $dbname");

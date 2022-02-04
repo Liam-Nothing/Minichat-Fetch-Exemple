@@ -1,6 +1,6 @@
 <?php
 
-    require("includes/db_connect.php");
+    require_once("includes/db_connect.php");
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$pdo->query("use $dbname");
 
@@ -8,8 +8,8 @@
         $username = htmlspecialchars($_POST["username"]);
         $message = htmlspecialchars($_POST["message"]);
 
-        $stmt = $pdo->prepare("INSERT INTO data (pseudo, message) VALUES (:pseudo, :message)");
-        $stmt->bindParam(':pseudo', $username);
+        $stmt = $pdo->prepare("INSERT INTO data (username, message) VALUES (:username, :message)");
+        $stmt->bindParam(':username', $username);
         $stmt->bindParam(':message', $message);
         $stmt->execute();
 
