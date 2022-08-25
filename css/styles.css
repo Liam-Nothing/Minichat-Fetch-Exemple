@@ -1,0 +1,15 @@
+.moji {
+    height: 18px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.time {
+    font-size: 11px;
+}
+
+#chat_messages {
+    user-select: none;
+}
