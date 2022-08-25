@@ -12,3 +12,4 @@
   
   - Install database `db/minichat.sql`
   - Edit credentials in `api/includes/functs_db.php`
+  - Edit api url in `js/scripts.js`
