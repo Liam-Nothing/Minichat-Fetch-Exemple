@@ -1,17 +1,14 @@
-# Mini chat example (Exercise School)
+# Mini chat example (Exercise School) (PHP, SQL and JS)
 
 - ## Description
   
-  Make a chat for school
+  School exercise, simple chat without login. With REST API and XHR.
 
 - ## Requirements
   
-  - Apache with php >= 7
+  - Apache server version >= 7.X
 
 - ## Install
   
-  - Edit *config.php*
-  
-  - Run *setup_db.php*
-
-
+  - Install database `db/minichat.sql`
+  - Edit credentials in `api/includes/functs_db.php`
